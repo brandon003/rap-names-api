@@ -52,3 +52,16 @@ app.listen( process.env.PORT || PORT,()=>{
     console.log(`Server Now running on port ${PORT}! Betta Go Catch It!`);
 
 });
+
+// mkdir api - project
+// cd api - project
+// npm init 
+// npm install express--save
+
+// heroku login
+// heroku create rapper-api-100dev
+// echo "web: node server.js" > Procfile
+// https://rapper-api-100dev.herokuapp.com/api/
+// git add. 
+// git commit - m "changes"
+// git push heroku main
