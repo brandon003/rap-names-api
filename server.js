@@ -1,7 +1,10 @@
 const { response } = require('express');
 const express = require('express')
 const app = express();
+const cors = require('cors')
 const PORT = 8000;
+
+app.use(cors());
 
 const rappers = {
     '21 savage':{
@@ -57,6 +60,7 @@ app.listen( process.env.PORT || PORT,()=>{
 // cd api - project
 // npm init 
 // npm install express--save
+// https://github.com/brandon003/rap-names-api
 
 // heroku login
 // heroku create rapper-api-100dev
