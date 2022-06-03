@@ -39,11 +39,11 @@ app.get('/api/:name', (request, response)=>{
 
     const rapperName = request.params.name.toLowerCase()
     if(rappers[rapperName]){
-    response.json(rappers[rapperName].birthName)
+    response.json(rappers[rapperName])
 
     console.log(rappers[rapperName])
     }else{
-        response.json(rappers['unknown'].birthName);
+        response.json(rappers['unknown']);
         console.log(rappers['unknown']);
     }
 
